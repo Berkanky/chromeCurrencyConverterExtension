@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Quickly Currency Exchange</title>
+</head>
+<body>
+    <div class="container mt-1 mb-1">
+        <button id="locationButton" type="button" class="btn btn-danger text-light">
+            <i class="fa-sharp fa-solid fa-location-dot fa-fade"></i>
+        </button>
+    </div>
+
+    <div class="card ma-1 card-no-border" style="width: 18rem;border:0px solid white;">
+        <div class="card-body">
+            <h5 class="card-title">Exchange Rate Converter</h5>
+            <div class="row">
+                <div class="col-12">
+                    <select id="currency" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+                <div class="col-12 mt-1">
+                    <button type="button" class="btn btn-outline-secondary " id="changeButton">
+                        <i class="fa-brands fa-stack-exchange fa-fade"></i>
+                    </button>
+                </div>
+                <div class="col-12 mt-1">
+                    <select id="convertcurrency" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+            </div>
+            <div class="input-group mb-3 mt-1">
+                <input type="number" class="form-control" id="amount" placeholder="Enter In Amount" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="convert">Convert</button>
+            </div>
+
+                <div class="input-group mb-3">
+                    <button class="btn btn-info text-light" type="button" id="clearResult">
+                        <i class="fa-solid fa-dollar-sign fa-fade" id="clearresulticon"></i>
+                    </button>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" disabled id="result">
+                </div>
+            </div> 
+        </div>
+</body>
+
+<style>
+    #locationButton {
+        border-radius: 50%;
+        float: right;
+    }
+    #changeButton{
+        margin-left: 42%;
+    }
+    
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="exchange.js"></script>
+</html>
